@@ -21,7 +21,6 @@ class MySurfaceView extends SurfaceView implements Runnable {
     public MySurfaceView(Context context, AttributeSet attrs) {
         super(context, attrs);
         surfaceHolder = getHolder();
-
         surfaceHolder.addCallback(new SurfaceHolder.Callback() {
             @Override
             public void surfaceCreated(@NonNull SurfaceHolder surfaceHolder) {
