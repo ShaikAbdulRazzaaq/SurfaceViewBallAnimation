@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 surfaceView.running = true;
                 surfaceView.workOnAnimations();
-                Log.d(TAG, "onClick: ");
+                Log.d(TAG, "onClick: " + surfaceView.running);
             }
         });
         btn_stop.setOnClickListener(new View.OnClickListener() {

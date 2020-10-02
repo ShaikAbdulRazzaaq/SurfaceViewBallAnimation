@@ -69,7 +69,9 @@ class MySurfaceView extends SurfaceView implements Runnable {
             canvas = surfaceHolder.lockCanvas();
             synchronized (surfaceHolder) {
                 draw(canvas);
-                valueX++;
+                valueX += 20;
+                if (valueX >= width)
+                    valueX = 0;
             }
             surfaceHolder.unlockCanvasAndPost(canvas);
         }
